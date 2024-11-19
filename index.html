@@ -3,51 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reviews Slider</title>
+  <title>Trustpilot Reviews Slider</title>
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+    }
+    .review-section {
+      text-align: center;
+      padding: 20px;
+    }
+    .review-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #a5d8ff;
+    }
+    .trustpilot-overview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .trustpilot-overview .stars {
+      font-size: 2em;
+      color: #6dce87;
+    }
+    .trustpilot-overview .rating {
+      font-size: 1.5em;
+    }
     .review-slider {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: 16px;
-      padding: 16px;
-      background-color: #ffffff;
+      gap: 20px;
+      padding: 20px;
     }
     .review {
       min-width: 300px;
       flex-shrink: 0;
-      background: #f9f9f9;
-      border: 1px solid #ddd;
+      border: 1px solid #444;
       border-radius: 8px;
-      padding: 16px;
+      padding: 20px;
       scroll-snap-align: start;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: transparent;
     }
     .review h4 {
       margin: 0 0 8px;
+      color: #6dce87;
     }
     .review p {
       margin: 0;
+      line-height: 1.5;
+    }
+    .review .stars {
+      color: #6dce87;
+      margin-bottom: 10px;
+    }
+    .review .author {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <h2>What our customers are saying</h2>
-  <div class="review-slider">
-    <div class="review">
-      <h4>John Doe</h4>
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Great service and very fast delivery!"</p>
+  <div class="review-section">
+    <h2>If you are not convinced yet</h2>
+    <h2>Client testimonials</h2>
+    <div class="trustpilot-overview">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="rating">Great</div>
+      <div class="reviews-count">Based on 2,267 reviews</div>
     </div>
-    <div class="review">
-      <h4>Jane Smith</h4>
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Excellent customer support and quality products."</p>
-    </div>
-    <div class="review">
-      <h4>Michael Johnson</h4>
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Highly recommend this company for their professionalism."</p>
+    <div class="review-slider">
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐ Verified</div>
+        <h4>I received my 1st Payout</h4>
+        <p>"I received my 1st Payout, Thank You GFT Team."</p>
+        <div class="author">- customer, 4 hours ago</div>
+      </div>
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐ Verified</div>
+        <h4>Clear rules and fast executions</h4>
+        <p>"Hello, I got a 100k swing account. The execution and spread are very good on mat..."</p>
+        <div class="author">- mohamadreza mtoorianpour, 9 hours ago</div>
+      </div>
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐ Verified</div>
+        <h4>Come mi sono trovato con GOATFOUND...</h4>
+        <p>"Mi sono trovato molto bene con quest’azienda i dati ti vengono inviati entro 24..."</p>
+        <div class="author">- Giulio Temponi, 10 hours ago</div>
+      </div>
     </div>
   </div>
 </body>
